@@ -12,10 +12,10 @@ const Navbar = () => {
           <Link href={"/cart"} className="text-[14px] font-medium">
             Shop
           </Link>
-          <Link href={"/Pro"} className="text-[14px] font-medium">
+          <Link href={"/product"} className="text-[14px] font-medium">
             Product
           </Link>
-          <Link href={"/Contact"} className="text-[14px] font-medium">
+          <Link href={"/contact"} className="text-[14px] font-medium">
             Pages
           </Link>
           <Link href={"/about"} className="text-[14px] font-medium">
