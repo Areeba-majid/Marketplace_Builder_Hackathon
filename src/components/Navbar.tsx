@@ -16,7 +16,7 @@ const Navbar = () => {
             Product
           </Link>
           <Link href={"/contact"} className="text-[14px] font-medium">
-            Pages
+            Contact Us
           </Link>
           <Link href={"/about"} className="text-[14px] font-medium">
             About

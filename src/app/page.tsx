@@ -5,6 +5,8 @@ import Featured from '@/components/Featured'
 import Categories from '@/components/Categories'
 import Product from '@/components/Product'
 import OurProduct from '@/components/Ourproduct'
+import Payment from '@/components/payment'
+import SignUpForm from './SignUpForm/Page'
 
 const page = () => {
   return (
@@ -15,6 +17,8 @@ const page = () => {
       <Categories/>
       <Product/>
       <OurProduct/>
+      <SignUpForm/>
+      <Payment/>
     </div>
   )
 }

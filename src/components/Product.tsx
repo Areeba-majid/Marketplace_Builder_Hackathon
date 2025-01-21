@@ -25,7 +25,7 @@ export default function Product() {
           {/* Orange chair (left side) */}
           <div className="w-full md:w-[48%]">
             <Image
-              src="/product/chair.jpeg"
+              src="/featured/l3.jpeg"
               alt="Orange modern chair"
               className="aspect-square h-auto w-auto object-cover"
               width={500}
@@ -56,7 +56,7 @@ export default function Product() {
             </div>
             <div className="aspect-square">
               <Image
-                src="/ourproduct/p1.jpeg"
+                src="/ourproduct/p6.jpeg"
                 alt="Vintage white chair"
                 className="aspect-square h-auto w-auto object-cover"
                 width={500}

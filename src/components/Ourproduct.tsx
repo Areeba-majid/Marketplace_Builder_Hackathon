@@ -1,4 +1,4 @@
-// import { ShoppingCart } from "lucide-react";
+import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import Image from "next/image";
 import Link from "next/link";
