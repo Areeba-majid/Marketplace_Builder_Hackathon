@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4">
       
         <div className="text-[#007580] font-bold text-lg">
-          <Link href={"/"}>MyBrand</Link>
+          <Link href={"/"}>Comforty</Link>
         </div>
 
         
