@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-200 px-4  sm:px-12 md:px-28">
       <div className="mx-auto py-12">
         <div className="flex flex-wrap justify-between gap-8">
-          {/* Brand  */}
+         
           <div className="flex flex-col w-full  md:w-[320px] items-start">
             <div className="flex items-center gap-2">
               <Image
@@ -193,9 +193,9 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="flex justify-between items-center flex-wrap text-[#9A9CAA] border-t pt-8">
           <p>
-            © 2021 - Blogy - Designed & Developed by{" "}
+            © 2025 - Blogy - Designed & Developed by{" "}
             <a href="#" className="text-[#272343] hover:underline">
-              Zakirsoft
+              Areeba
             </a>
           </p>
           <div className="mt-4 flex justify-center space-x-4">

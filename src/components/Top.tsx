@@ -1,33 +1,27 @@
-
 import React from "react";
-import { FaCheck } from "react-icons/fa";
-import { FaExclamationCircle } from "react-icons/fa";
-
+import { FaCheck, FaExclamationCircle } from "react-icons/fa";
 
 const Top = () => {
   return (
-    <div
-      className={` w-full flex md:flex-row flex-col bg-[#272343] pt-[14px] pb-[14px] items-center justify-between h-[45px]`}
-    >
-      <div className="max-w-screen-xl mx-auto container flex items-center justify-between w-full px-4">
-        {/* Section L */}
-        <p className="text-white flex items-center space-x-2 font-normal text-center md:text-left">
-          <FaCheck className="text-white" />
+    <div className="w-full bg-[#272343] py-2 px-4">
+      <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between text-white text-sm md:text-base">
+        
+        {/* Left Section */}
+        <p className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-start">
+          <FaCheck className="text-lg" />
           <span>Free shipping on all orders over $50</span>
         </p>
 
-        {/* Section R*/}
-        <ul className="text-white flex items-center space-x-6 font-normal text-center md:text-left">
-          <li className="flex items-center space-x-1 cursor-pointer">
-            <span>Eng</span>
-            {/* <ChevronDown /> */}
-          </li>
-          <li  className="cursor-pointer">FAQs</li>
-          <li className="flex items-center space-x-2 cursor-pointer">
-            <FaExclamationCircle className="text-white" />
+        {/* Right Section */}
+        <ul className="flex items-center gap-3 md:gap-6 w-full md:w-auto justify-center md:justify-end mt-2 md:mt-0">
+          <li className="cursor-pointer">Eng</li>
+          <li className="cursor-pointer">FAQs</li>
+          <li className="flex items-center gap-2 cursor-pointer">
+            <FaExclamationCircle className="text-lg" />
             <span>Need Help</span>
           </li>
         </ul>
+
       </div>
     </div>
   );
