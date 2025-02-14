@@ -1,13 +1,10 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { CiShoppingCart } from "react-icons/ci";
 
 // Product Interface
-interface Pros {
+interface Product {
   id: number;
   title: string;
   price: number;
@@ -19,7 +16,7 @@ interface Pros {
 }
 
 // Product List
-const products: Pros[] = [
+const products: Product[] = [
   { id: 1, title: "Library Stool Chair", price: 20, image: "/ourproduct/p01.jpeg", isNew: true, quantity: 1 },
   { id: 2, title: "Office Chair", price: 25, originalPrice: 35, image: "/ourproduct/p2.jpeg", isSale: true, quantity: 1 },
   { id: 3, title: "Gaming Chair", price: 40, image: "/ourproduct/p3.jpeg", quantity: 1 },
@@ -47,7 +44,7 @@ export function ProductList() {
   const router = useRouter();
 
   // Handle "Buy Now" Click
-  const handleBuyNow = (product: Pros) => {
+  const handleBuyNow = (product: Product) => {
     router.push(`/payment?productId=${product.id}&quantity=${product.quantity}`);
   };
 

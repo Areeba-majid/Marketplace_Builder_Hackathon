@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { CiShoppingCart } from "react-icons/ci";
 import { useState } from "react";
 
 // Product Interface
@@ -59,6 +58,11 @@ export default function ProductList() {
 
   return (
     <div className="container mx-auto px-4 py-20">
+      {/* 🛒 Cart Summary */}
+      <div className="flex justify-end p-4">
+        <span className="text-lg font-medium text-gray-700">Cart: {cart.length} items</span>
+      </div>
+
       <h1 className="text-5xl text-center font-semibold text-gray-800 mb-8">Our Products</h1>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {products.map((product) => (

@@ -5,13 +5,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
+// Define the cart item type properly
+interface CartItem {
+  id: number;
+  title: string;
+  price: number;
+  quantity: number;
+}
+
 const Header = () => {
-  const [cartCount, setCartCount] = useState(0);
+  const [cartCount, setCartCount] = useState<number>(0);
 
   useEffect(() => {
-    // Load cart items from localStorage
-    const cart = JSON.parse(localStorage.getItem("cart") || "[]");
-    setCartCount(cart.reduce((total: number, item: any) => total + item.quantity, 0));
+    // Load cart items from localStorage with proper type handling
+    const cart: CartItem[] = JSON.parse(localStorage.getItem("cart") || "[]");
+    setCartCount(cart.reduce((total, item) => total + item.quantity, 0));
   }, []);
 
   return (
